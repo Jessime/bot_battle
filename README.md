@@ -13,6 +13,10 @@ These particular bots simply scans for a valid position to play and plays in the
 are slightly more complicated, but no more strategically sound. These bots take one of two actions at random. They either copy the original bots and just play in the first available spot, or they scan all valid spots and play the spot that has the largest sum of indicies (i.e. if the bottom right corner [7,7] were avaliable, it would be chosen since it gets a score of 14).
 
 These bots are slightly more useful for their ability to make a 2D array of all valid spots during a particular play. All higher level decision making written in will depend on this new array. 
+
+##graphics.py
+is a light weight wrapper around Tkinker. It was developped by John Zelle and can also be downloaded from http://mcsp.wartburg.edu/zelle/python/graphics.py
+ 
 ##Version and Dependencies
 Python 2.7
 

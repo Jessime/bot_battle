@@ -33,7 +33,7 @@ Basic rules and strategies can be found here:
 http://www.samsoft.org.uk/reversi/strategy.htm
 """
 board = self.state
-#board = self.state.tolist()
+#board = self.state.tolist
 
 
 def main(board):

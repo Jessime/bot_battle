@@ -1,4 +1,5 @@
-#reversi_battle.py 
+#Bot Battle
+##reversi_battle.py 
 is a variation on the standard Reversi/Othello board game which aims to encourage quick coding. While quick writing code often isn't ideal, it's sometimes desireable to just get a working prototype up and running as quickly as possible.
 
 Instead of playing a single game laying down piece-by-piece players write scripts to play a full game for them. The two bots will face off until one crashes or wins by standard reversi rules. After a single game, script pauses and allows the players time to make the appropriate changes to their bots. Another game is played and the cycle repeats until one of the two players wins five games. Once five games have been won, the "Series" is over and an overall winner is declared. 
@@ -12,6 +13,7 @@ These particular bots simply scans for a valid position to play and plays in the
 are slightly more complicated, but no more strategically sound. These bots take one of two actions at random. They either copy the original bots and just play in the first available spot, or they scan all valid spots and play the spot that has the largest sum of indicies (i.e. if the bottom right corner [7,7] were avaliable, it would be chosen since it gets a score of 14).
 
 These bots are slightly more useful for their ability to make a 2D array of all valid spots during a particular play. All higher level decision making written in will depend on this new array. 
-#Version and Dependencies
+##Version and Dependencies
 Python 2.7
+
 Numpy 1.9.2 (or similar)

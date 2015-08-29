@@ -2,7 +2,7 @@
 """
 Created on Fri Aug 14 21:13:59 2015
 
-@author: Jessime Kirk
+@author: JMK
 """
 
 import graphics
@@ -10,9 +10,9 @@ import numpy as np
 from time import sleep
 
 class Player():
-    def __init__(self):
-        self.name = raw_input("What is your name, Player? ")
-        self.bot_loc = raw_input("Where is your bot script located? ")
+    def __init__(self, name, loc):
+        self.name = name #raw_input("What is your name, Player {}? ".format(self.num))
+        self.bot_loc = loc#raw_input("Where is your bot script located? ")
         self.game_points = 0
         self.series_points = 0
         self.state = None
