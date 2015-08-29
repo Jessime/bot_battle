@@ -2,7 +2,11 @@
 ##reversi_battle.py 
 is a variation on the standard Reversi/Othello board game which aims to encourage quick coding. While quick writing code often isn't ideal, it's sometimes desireable to just get a working prototype up and running as quickly as possible.
 
-Instead of playing a single game laying down piece-by-piece players write scripts to play a full game for them. The two bots will face off until one crashes or wins by standard reversi rules. After a single game, script pauses and allows the players time to make the appropriate changes to their bots. Another game is played and the cycle repeats until one of the two players wins five games. Once five games have been won, the "Series" is over and an overall winner is declared. 
+Instead of playing a single game laying down piece-by-piece players write scripts to play a full game for them. The two bots will face off until one crashes or wins by standard reversi rules. After a single game, script pauses and allows the players time to make the appropriate changes to their bots. Another game is played and the cycle repeats until one of the two players wins five games. Once five games have been won, the "Series" is over and an overall winner is declared.
+
+I didn't bother to include a timer in the game. Players can figure out how to best handle that themselves, but some flexibility should probably be allowed.
+
+Here's a link to a [video demonstration](https://www.youtube.com/watch?v=MwYgw6hnXYo).
 
 ##practice_bot.py and practice_bot2.py
 are trival examples of bots, but show how a script should be set up to interact with reversi_battle.py. The game exposes the board to each player's bot as a numpy array filled with 0's for empty spaces, and 1's and 2's for spots currently occupied by Player 1 and 2, respectively. The the script, no matter the complexity, should basically, take the current board as input, and output a new board when one of the player's pieces has been played in a valid spot (i.e. a 1 or a 2 has replaced one of the 0s). 
@@ -21,3 +25,5 @@ is a light weight wrapper around Tkinker. It was developped by John Zelle and ca
 Python 2.7
 
 Numpy 1.9.2 (or similar)
+
+The Anaconda distribution is the reccommend method for obtaining numpy if necessary.
